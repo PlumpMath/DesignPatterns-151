@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{971E2334-0487-46C0-9E52-72DBD86C57ED}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DesignPatterns</RootNamespace>
+    <AssemblyName>DesignPatterns</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractFactory\IButton.cs" />
+    <Compile Include="AbstractFactory\IGUIFactory.cs" />
+    <Compile Include="AbstractFactory\OSXButton.cs" />
+    <Compile Include="AbstractFactory\OSXGUIFactory.cs" />
+    <Compile Include="AbstractFactory\WinButton.cs" />
+    <Compile Include="AbstractFactory\WinGUIFactory.cs" />
+    <Compile Include="Adapter\Consultant.cs" />
+    <Compile Include="Adapter\ConsultantToEmployeeAdapter.cs" />
+    <Compile Include="Adapter\Employee.cs" />
+    <Compile Include="Adapter\IEmployee.cs" />
+    <Compile Include="Bridge\CircleShape.cs" />
+    <Compile Include="Bridge\DrawingAPI.cs" />
+    <Compile Include="Bridge\IDrawingAPI.cs" />
+    <Compile Include="Bridge\Shape.cs" />
+    <Compile Include="Builder\Cook.cs" />
+    <Compile Include="Builder\HawaiianPizzaBuilder.cs" />
+    <Compile Include="Builder\PizzaBuilder.cs" />
+    <Compile Include="Builder\SpicyPizzaBuilder.cs" />
+    <Compile Include="ChainOfResponsibility\ConsoleLogger.cs" />
+    <Compile Include="ChainOfResponsibility\EmailLogger.cs" />
+    <Compile Include="ChainOfResponsibility\FileLogger.cs" />
+    <Compile Include="ChainOfResponsibility\Logger.cs" />
+    <Compile Include="Command\FlipDownCommand.cs" />
+    <Compile Include="Command\FlipUpCommand.cs" />
+    <Compile Include="Command\ICommand.cs" />
+    <Compile Include="Command\Light.cs" />
+    <Compile Include="Composite\Composite.cs" />
+    <Compile Include="Composite\IComponent.cs" />
+    <Compile Include="Composite\Leaf.cs" />
+    <Compile Include="Facade\EngineController.cs" />
+    <Compile Include="Facade\IEngineController.cs" />
+    <Compile Include="Facade\ITachometerController.cs" />
+    <Compile Include="Facade\ITractionControlController.cs" />
+    <Compile Include="Facade\ITransmissionController.cs" />
+    <Compile Include="Facade\IVehicleFacade.cs" />
+    <Compile Include="Facade\TachometerController.cs" />
+    <Compile Include="Facade\TractionControlController.cs" />
+    <Compile Include="Facade\TransmissionController.cs" />
+    <Compile Include="Facade\VehicleFacade.cs" />
+    <Compile Include="Interpreter\Evaluator.cs" />
+    <Compile Include="Interpreter\IExpression.cs" />
+    <Compile Include="Interpreter\Minus.cs" />
+    <Compile Include="Interpreter\Number.cs" />
+    <Compile Include="Interpreter\Plus.cs" />
+    <Compile Include="Interpreter\Variable.cs" />
+    <Compile Include="Mediator\Colleague.cs" />
+    <Compile Include="Mediator\ConcreteColleague1.cs" />
+    <Compile Include="Mediator\ConcreteColleague2.cs" />
+    <Compile Include="Mediator\ConcreteMediator.cs" />
+    <Compile Include="Mediator\Mediator.cs" />
+    <Compile Include="Observer\Location.cs" />
+    <Compile Include="Observer\LocationReporter.cs" />
+    <Compile Include="Observer\LocationTracker.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Command\Switch.cs" />
+    <Compile Include="Prototype\ConcretePrototype.cs" />
+    <Compile Include="Strategy\Add.cs" />
+    <Compile Include="Strategy\Context.cs" />
+    <Compile Include="Strategy\IStrategy.cs" />
+    <Compile Include="Strategy\Multiply.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AbstractFactory\AbstractFactory.cd" />
+    <None Include="Bridge\Bridge.cd" />
+    <Compile Include="Builder\Pizza.cs" />
+    <None Include="Builder\BuilderPattern.cd" />
+    <None Include="ChainOfResponsibility\CoRPattern.cd" />
+    <None Include="Command\CommandPattern.cd" />
+    <None Include="Facade\FacadePattern.cd" />
+    <None Include="Interpreter\InterpreterPattern.cd" />
+    <None Include="Mediator\MediatorPattern.cd" />
+    <None Include="Observer\ObserverPattern.cd" />
+    <None Include="Strategy\StrategyPattern.cd" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Light class is receiver">
+    <Position X="3.125" Y="3.604" Height="0.583" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Switch class is invoker&#xD;&#xA;it has a list of commands&#xD;&#xA;in the case of calculator is implemented as a stack">
+    <Position X="3.333" Y="0.542" Height="1.26" Width="3.085" />
+  </Comment>
+  <Class Name="DesignPatterns.Command.FlipDownCommand" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="3" Width="1.5" />
+    <AssociationLine Name="receiver" Type="DesignPatterns.Command.Light">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.214" Y="0.081" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAABABAAAAAAAAAA=</HashCode>
+      <FileName>Command\FlipDownCommand.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="receiver" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DesignPatterns.Command.FlipUpCommand" BaseTypeListCollapsed="true">
+    <Position X="12" Y="3" Width="1.5" />
+    <AssociationLine Name="receiver" Type="DesignPatterns.Command.Light">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.214" Y="0.07" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAABABAAAAAAAAAA=</HashCode>
+      <FileName>Command\FlipUpCommand.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="receiver" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DesignPatterns.Command.Light">
+    <Position X="5.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Command\Light.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Command.Switch">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAABAAAAAAABAAAAA=</HashCode>
+      <FileName>Command\Switch.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ICommand" />
+    </ShowAsAssociation>
+  </Class>
+  <Interface Name="DesignPatterns.Command.ICommand">
+    <Position X="10.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command\ICommand.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
