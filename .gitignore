@@ -31,6 +31,9 @@ obj/
 [Rr]elease*/
 Ankh.NoLoad
 
+#MonoDevelop
+*.pidb
+*.userprefs
 
 #Tooling
 _ReSharper*/
@@ -40,6 +43,12 @@ _ReSharper*/
 
 #Project files
 [Bb]uild/
+
+#Subversion files
+.svn
+
+# Office Temp Files
+~$*
 
 #NuGet
 packages/
